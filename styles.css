@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+/*******************header section***********************/
+
+header{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.navbar-brand{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: #e5e8c8 !important;
+    font-size: 30px; 
+    letter-spacing: 3px;
+}
+
+.navbar-brand .inkm{
+    border-bottom: 2px solid #e5e8c8;
+}
+
+.navbar-brand .an{
+    border-bottom: 2px dashed #e5e8c8;
+}
+
+.nav-item{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 18px;
+    color: #e5e8c8 !important;
+}
+
+.nav-item:hover{
+    color: white !important;
+}
+
+.navbar-brand:hover{
+    color: white !important;
+}
+
+/***********************author_info******************/
+
+#author_info{
+    background-color: yellow;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+#author_info h3{
+    padding: 20px 0;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Kristi', cursive;
+}
+
+#author_info h1{
+    color: black;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 80px;
+}
+
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    animation: animate 20s linear infinite;
+}
+
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+    background-color: purple;
+}
+
+
+.box-area li:nth-child(2){
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+    background-color: turquoise;
+}
+
+
+.box-area li:nth-child(3){
+    left: 76%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 5s;
+    background-color: springgreen;
+}
+
+
+.box-area li:nth-child(4){
+    left: 50%;
+    width: 170px;
+    height: 170px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+    z-index: -1;
+    background-color: red;
+}
+
+
+.box-area li:nth-child(5){
+    left: 10%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+    background-color: green;
+}
+
+
+.box-area li:nth-child(6){
+    left: 35%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 3.5s;
+    z-index: -1;
+    background-color: darkblue;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.1;
+    }
+}
+
+/******************author_story*********************/
+
+#author_story{
+    background-color: darkblue;
+    padding: 50px 0;
+    height: 100vh;
+}
+
+#author_story h2{
+    color: wheat;
+    font-family: 'Sacramento';
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#author_story h2 span{
+    color: red;
+}
+
+
+/*********************testimonials**********************/
+
+#testimonials{
+    position: relative;
+    text-align: center;
+    background-color: tomato;
+    height: 100vh;
+}
+
+.feelings{
+    text-align: left;
+    padding: 50px 0;
+}
+
+.feelings h3{
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    color: bisque;
+    font-size: 40px;
+}
+
+.feelings .loved{
+    padding: 0 40px;
+    z-index: 2;
+}
+
+.feelings .loved p{
+    padding-top: 35px;
+    color: bisque;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.feelings .betrayed{
+    padding: 0 40px;
+}
+
+
+.feelings .betrayed p{
+    padding-top: 35px;
+    color: bisque;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.feelings_animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.feelings_animation li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    animation: animate2 20s linear infinite;
+}
